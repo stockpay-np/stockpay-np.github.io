@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- check -->
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Template Stock Profile: Tesla</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="//proxyen.com/{CLIENT_HASH}/js/article_{IDENTIFIER}.js? {MD5 DATETIME}" async></script> 
+
+ 
+
+</head>
+
+<body id="page-top">
+
+    <h3>Area Ten content</h3>
+    <div id="a10_article"></div> 
+
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+    </div>
+
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+    </div>
+
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+    </div>
+
+    <div class="tradingview-widget-container">
+        <div id="tradingview_a3e64"></div>    
+    </div>
+
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+    </div>
+
+
+    <!-- ######################################################### -->
+    <!-- Widget 1: ticker price -->
+    <script >
+        exchange = "NASDAQ";
+        ticker = "TSLA";
+        symbol = `${exchange}:${ticker}`
+    </script>
+
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+        {
+            "symbol": "NASDAQ:TSLA",
+            "width": 1000,
+            "height": 400,
+            "colorTheme": "light",
+            "isTransparent": false,
+            "locale": "en"
+        }
+    </script>
+
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+            "symbol": "NASDAQ:TSLA",
+            "width": 425,
+            "colorTheme": "light",
+            "isTransparent": false,
+            "locale": "en"
+        }
+    </script>
+
+
+
+
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+        {
+            "interval": "1W",
+            "width": 425,
+            "isTransparent": false,
+            "height": 450,
+            "symbol": "NASDAQ:TSLA",
+            "showIntervalTabs": true,
+            "locale": "en",
+            "colorTheme": "light"
+        }
+    </script>
+
+    <!-- trading view -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.MediumWidget(
+            {
+                "symbols": [
+                [
+                    "Tesla",
+                    "NASDAQ:TSLA|12M"
+                ],
+                ],
+                "chartOnly": false,
+                "width": 1000,
+                "height": 500,
+                "locale": "en",
+                "colorTheme": "light",
+                "gridLineColor": "rgba(240, 243, 250, 0)",
+                "fontColor": "#787B86",
+                "isTransparent": false,
+                "autosize": false,
+                "showVolume": false,
+                "hideDateRanges": false,
+                "scalePosition": "no",
+                "scaleMode": "Normal",
+                "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                "noTimeScale": false,
+                "valuesTracking": "1",
+                "chartType": "line",
+                "container_id": "tradingview_a3e64"
+            }
+        );
+    </script>
+
+    <!-- fundamental data -->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
+        {
+                "symbol": "NASDAQ:TSLA",
+                "colorTheme": "light",
+                "isTransparent": false,
+                "largeChartUrl": "",
+                "displayMode": "regular",
+                "width": 480,
+                "height": 830,
+                "locale": "en"
+        }
+    </script>
+
+
+
+
+</body>
+</html>
