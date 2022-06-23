@@ -47,23 +47,22 @@
 <form name="newsletter" class="newsletter" action="#">
   <label for="fname">Email:</label><br>
   <input type="text" id="email" name="email"><br>
-  <input type="submit" name="submit" value="Signup" onclick="newsletterSignup()">
+  <input type="submit" id="submit" name="submit" value="Signup" >
 </form> 
-
-
-
 
 <script> 
     function newsletterSignup(event) { 
-        email = document.newsletter.email.value;
-        console.log(`Submit email:${email}`)
-        // event.preventDefault();
-        dataLayer.push({
-            'news_email': email
-          });
-
-        return false
+      event.preventDefault();
+      email = document.newsletter.email.value;
+      console.log(`Submit email:${email}`)
+      dataLayer.push({
+          'news_email': email
+        });
     }
+
+    document.querySelector("#submit").addEventListener(
+      'click',newsletterSignup, false
+    )
 
 </script> 
 
