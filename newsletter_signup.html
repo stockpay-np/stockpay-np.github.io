@@ -55,9 +55,7 @@
       event.preventDefault();
       email = document.newsletter.email.value;
       console.log(`Submit email:${email}`)
-      dataLayer.push({
-          'news_email': email
-        });
+      gtag('event','newsletter_signup',{'email':email})
     }
 
     document.querySelector("#submit").addEventListener(
